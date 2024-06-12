@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
-:root {
-    --cor-de-fundo:#1e1e1e;
-    --verde:#6fff5f;
-    --branco:#ffffff;
-    --botao-ativo:#3a375e;
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+:root{
+    --cor-de-fundo: #1e1e1e;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
     --botao-inativo: rgba(58,55,94,0.5);
     --texto-fundo: rgba(58,55,94,0.3);
 }
+
 body{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: 'Chakra Petch', Sans-Serif;
+    font-family: "Chakra Petch", sans-serif;
 }
 .conteudo-principal{
     display:flex;
@@ -51,47 +53,51 @@ body{
     display: block;
 }
 .ativo{
-background-color: var(--botao-ativo);
-border-bottom: 4px solid var(--verde);
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
 }
 .aba-conteudo.ativo{
-  display: block;
+display: block;
 }
 .aba-conteudo{
 display: none;
 }
+
 .aba-conteudo-texto-principal{
     font-size: 28px;
     text-align: center;
 }
+
 .aba-conteudo-texto-secundario{
-text-align: center;
-color: var(--verde);
-text-transform: uppercase;
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
 }
 
 .contador{
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
+    display:flex ;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contador-digito{
-padding: 0 16px;
-text-align: center;
-min-width: 100px;
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
 }
 
 .contador-digito-numero{
-font-size: 80px;
-margin: 0;
+    font-size: 80px;
+    margin: 0;
 }
 
 .contador-digito-titulo{
-color: var(--verde);
-font-size: 20px;
-margin: 0;
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
 }
+
+
 
 
 @media screen and (min-width: 750px){
@@ -105,5 +111,4 @@ margin: 0;
         border-radius: 0 40px 0 0;
     }
 }
-
 
